@@ -233,6 +233,7 @@ const html = `
    
       <label for="genero">Genero:</label>
       <select id="genero" name="genero">
+        <option value="nulo"></option>
         <option value="feminino">Feminino</option>
         <option value="masculino">Masculino</option>
       </select>
