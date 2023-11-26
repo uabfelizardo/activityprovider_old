@@ -220,10 +220,6 @@ const html = `
         acompanhamento de utentes com o risco de contaminação com doenças respiratórias 
         transmissíveis num laboratório remoto utilizando a Arquitetura Inven!RA.
     </section>
-    
-    <h3>
-      Quais os sintomas tem?
-    </h3>
 
     <div class="p-2">
       <form onsubmit="return handleData()" method="post" action="#">
@@ -237,6 +233,10 @@ const html = `
         <option value="feminino">Feminino</option>
         <option value="masculino">Masculino</option>
       </select>
+
+    <h3>
+      Quais os sintomas tem?
+    </h3>
 
       <div>
         <input type="checkbox" name="utente" id="utente_tem_tosse_seca" value="tem_tosse_seca" checked> <label for="utente_tem_tosse_seca">Tosse seca</label>
