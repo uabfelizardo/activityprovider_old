@@ -1,25 +1,13 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000; // Use the provided port or default to 3000
 
-app.get("/", (req, res) => res.type('html').send(html));
+// Define routes or middleware
+app.get('/', (req, res) => {
+  res.send('Hello, world!');
+});
 
-const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
-
-server.keepAliveTimeout = 120 * 1000;
-server.headersTimeout = 120 * 1000;
-
-
-const html = `
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello from Render!</title>
-  </head>
-  <body>
-    <section>
-      Hello from Render!
-    </section>
-  </body>
-</html>
-`
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
