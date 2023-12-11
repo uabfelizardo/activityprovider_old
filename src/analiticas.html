@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html> 
+<html lang="pt">
 <head> 
     <title> 
         Online LAB 
@@ -88,18 +88,15 @@
 
 <body style="text-align: left;"> 
     <section>
-        Implementar um “Activity Provider” para auxiliar médico no rastreo e 
-        acompanhamento de utentes com o risco de contaminação com doenças respiratórias 
-        transmissíveis num laboratório remoto utilizando a Arquitetura Inven!RA.
+      <label for="fname">Pequisar analiticas feitas pelos utente/doentes:</label>
     </section>
 
     <div class="p-2">
-      <form onsubmit="return handleData()" method="post" action="#">
+      <form action="/get-analiticas" method="get">
       
         <table>
           <tr>
             <td>
-              <label for="fname">Pequisar analiticas:</label>
               <input type="text" id="pesquisa" name="pesquisa" value=""><br>
             </td>
             <td>

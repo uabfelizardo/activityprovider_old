@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,7 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        background-image: url("/src/imgs/1.png");
       }
 
       #sidebar {
@@ -25,9 +26,17 @@
       }
 
       #content {
-        padding: 20px;
+        padding: 10px;
         float: left;
         width: calc(100% - 250px);
+      }
+
+      #titulo {
+        color: #333333;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
       }
 
       #sidebar a {
@@ -39,8 +48,11 @@
       #sidebar a:hover {
         text-decoration: underline;
       }
+
+      
     </style>
   </head>
+  
   <body>
     <div id="sidebar">
       <h2>Online LAB</h2>
@@ -48,10 +60,20 @@
       <a href="./analiticas">Pesquisar Analiticas</a>
       <a href="./deploy-atividade">Configurar Analiticas</a>
     </div>
+    
+    <div id="titulo">
+      <h2>
+        Implementar um “Activity Provider” para auxiliar médico no rastreo e 
+        acompanhamento de utentes com o risco de contaminação com doenças respiratórias 
+        transmissíveis num laboratório remoto utilizando a Arquitetura Inven!RA.
+      </h2>
+    </div>
+
     <div id="content">
       <p>
-        Por: Felizardo Chaguala
+        @Felizardo Chaguala, 2023
       </p>
     </div>
+
   </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html> 
+<html lang="pt">
 <head> 
     <title> 
         Online LAB 
@@ -87,17 +87,16 @@
 </head> 
 
 <body style="text-align: left;"> 
+
     <section>
-        Implementar um “Activity Provider” para auxiliar médico no rastreo e 
-        acompanhamento de utentes com o risco de contaminação com doenças respiratórias 
-        transmissíveis num laboratório remoto utilizando a Arquitetura Inven!RA.
+        <h2> Preencha o Formulários para fazer o rastreo</h2>
     </section>
 
     <div class="p-2">
-      <form onsubmit="return handleData()" method="post" action="#">
+      <form  action="/create-obs" method="POST">
       
       <label for="fname">Idade:</label>
-      <input type="text" id="idade" name="idade" value="38"><br>
+      <input type="text" id="idade" name="idade" value=""><br>
    
       <label for="genero">Genero:</label>
       <select id="genero" name="genero">
@@ -111,7 +110,7 @@
     </h3>
 
       <div>
-        <input type="checkbox" name="utente" id="utente_tem_tosse_seca" value="tem_tosse_seca" checked> <label for="utente_tem_tosse_seca">Tosse seca</label>
+        <input type="checkbox" name="utente" id="utente_tem_tosse_seca" value="tem_tosse_seca"> <label for="utente_tem_tosse_seca">Tosse seca</label>
       </div>
 
       <div>
