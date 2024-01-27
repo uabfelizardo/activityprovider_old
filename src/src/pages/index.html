@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AP-OnlineLab</title>
+    <style>
+      /* Formatar o documento usando CSS */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url("/src/imgs/1.png");
+      }
+
+      #sidebar {
+        height: 100vh;
+        padding: 20px;
+        background-color: #e1e1e1;
+        float: left;
+        width: 250px;
+      }
+
+      #sidebar h2 {
+        margin-top: 0;
+      }
+
+      #content {
+        padding: 10px;
+        float: left;
+        width: calc(100% - 250px);
+      }
+
+      #titulo {
+        color: #333333;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+      }
+
+      #sidebar a {
+        color: #333;
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
+      }
+      #sidebar a:hover {
+        text-decoration: underline;
+      }
+
+      
+    </style>
+  </head>
+  
+  <body>
+    <div id="sidebar">
+      <h2>Activity Provider Online LAB</h2>
+      <a href="./form-atividade">Fazer analiticas</a>
+      <a href="./analiticas">Pesquisar analiticas</a>
+      <a href="./parametros_da_atividade">Parametros da atividade</a>
+      <a href="./paramentros_da_analiticas">Paramentros de analiticas</a>
+      <a href="#">Configuar analiticas</a>
+    </div>
+    
+    <div id="titulo">
+      <h2>
+        Implementar um “Activity Provider” para auxiliar médico no rastreo e 
+        acompanhamento de utentes com o risco de contaminação com doenças respiratórias 
+        transmissíveis num laboratório remoto utilizando a Arquitetura Inven!RA.
+      </h2>
+    </div>
+
+    <div id="content">
+      <p>
+        @Felizardo Chaguala, 2023
+      </p>
+    </div>
+
+  </body>
+</html>

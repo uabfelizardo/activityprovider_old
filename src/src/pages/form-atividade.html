@@ -1,0 +1,258 @@
+<!DOCTYPE html> 
+<html lang="pt">
+<head> 
+    <title> 
+        Online LAB 
+    </title> 
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+
+    input[type=checkbox] {
+      background-color: #3CBC8D;
+      color: #3CBC8D;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+      text-align: left;
+    }
+
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+
+    /* Limpe os carros alegóricos após as colunas */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    table {
+      border: px #32c232 solid;
+      color: #0f0f0f;
+      align-content: center;
+      background-color: #c6f079f8;
+    }
+    tr {
+      border: px #32c232 solid;
+      color: #0f0f0f;
+      align-content: center;
+      /* background-color: #9ed831f8; */
+    }
+    td {
+      border: px #32c232 solid;
+      color: #4d4b4b;
+      align-content: center;
+    }
+
+    body{
+        font-family:arial;
+        font-size:20px;
+    }
+    /* 
+      Layout responsivo - quando a tela tiver menos de 600 px 
+      de largura, empilhe as duas colunas uma sobre a outra, 
+      em vez de uma ao lado da outra 
+    */
+    @media screen and (max-width: 600px) {
+      .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+    </style>
+</head> 
+
+<body style="text-align: left;"> 
+<form  action="/paciente" method="POST">
+  <table align="center">
+    <tr>
+      <td> 
+        <section>
+            <h2> Preencha o Formulários para fazer o rastreo</h2>
+        </section>
+      </td>
+    </tr>
+
+    <div class="p-2">
+      <tr>
+        <td> 
+          <label for="fname">Idade:</label>
+          <input type="text" id="idade" name="idade" value=""><br>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <!-- <label for="genero">Genero:</label>
+          <select id="genero" name="genero">
+            <option value="nulo"></option>
+            <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+          </select> -->
+
+          <fieldset>
+            <legend>Genero:</legend>
+            <input type="radio" id="male" name="genero" value="male">
+            <label for="male">Masculino</label>
+        
+            <input type="radio" id="female" name="genero" value="female">
+            <label for="female">Feminino</label>
+          </fieldset>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h3>
+            Quais os sintomas tem?
+          </h3>
+        </td>
+      </tr>
+      
+     <tr>
+      <td>
+        <div>
+          <input type="checkbox" name="utente" id="utente_tem_tosse_seca" value="tem_tosse_seca"> <label for="utente_tem_tosse_seca">Tosse seca</label>
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <div>
+          <input type="checkbox" name="utente" id="utente_tem_tosse_com_pus" value="tem_tosse_com_pus"> <label for="utente_tem_tosse_com_pus">Tosse com pus</label>
+        </div>
+      </td>
+    </tr>
+    
+      <tr>
+        <td>
+          <div>
+            <input type="checkbox" name="utente" id="utente_tem_tosse_com_sangue" value="tem_tosse_com_sangue"> <label for="utente_tem_tosse_com_sangue">Tosse com sangue</label>
+          </div>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          <div>
+            <input type="checkbox" name="utente" id="utente_tem_cansaco_excessivo" value="tem_cansaco_excessivo"> <label for="utente_tem_cansaco_excessivo">Cansaco excessivo</label>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div>
+            <input type="checkbox" name="utente" id="utente_tem_febre_baixa" value="tem_febre_baixa"> <label for="utente_tem_febre_baixa">Febre baixa</label>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div>
+            <input type="checkbox" name="utente" id="utente_tem_sudorese_noturna" value="tem_sudorese_noturna"> <label for="utente_tem_sudorese_noturna">Sudores noturna</label>
+          </div>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          <div>
+          <input type="checkbox" name="utente" id="utente_tem_falta_de_apetite" value="tem_falta_de_apetite" > <label for="utente_tem_falta_de_apetite">Falta de apetite</label>
+          </div>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          <div>
+            <input type="checkbox" name="utente" id="utente_tem_palidez" value="tem_palidez"> <label for="utente_tem_palidez">Palidez</label>
+          </div>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          <div>
+            <input type="checkbox" name="utente" id="utente_tem_emagrecimento_acentuado" value="tem_emagrecimento_acentuado"> <label for="utente_tem_emagrecimento_acentuado">Emagrecimento acentuado</label>
+          </div>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          <div>
+            <input type="checkbox" name="utente" id="utente_tem_rouquidao" value="tem_rouquidao"> <label for="utente_tem_rouquidao">Rouquidao</label>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+        <div>
+          <input type="checkbox" name="utente" id="utente_tem_fraqueza" value="tem_fraqueza"> <label for="utente_tem_fraqueza">Fraqueza</label>
+        </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          </br>
+            <div>
+              <input type="submit" name="submit" value="Submit"/>
+            </div>
+          </td>
+        </tr>
+    <div>
+  </table>
+</form>
+</body> 
+</html>
