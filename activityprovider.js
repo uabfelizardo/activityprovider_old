@@ -1,10 +1,10 @@
-[
+const data = JSON.stringify([
     {
-        "name": "Online Lab",
-        "config_url": "https://ap-webserver-online-lab.onrender.com/",
-        "json_params_url": "https://ap-webserver-online-lab.onrender.com/json_params_url.js",
-        "user_url": "https://ap-webserver-online-lab.onrender.com/deploy-atividade",
-        "analytics_url": "https://ap-webserver-online-lab.onrender.com/analytics-atividade",
-        "analytics_list_url": "https://ap-webserver-online-lab.onrender.com/analytics_list_url.js"
-    } 
-]
+           "name": "Online Lab",
+            "config_url": "https://ap-webserver-online-lab.onrender.com/form-atividade",
+            "json_params_url": "https://ap-webserver-online-lab.onrender.com/parametros_da_atividade",
+            "user_url": "https://ap-webserver-online-lab.onrender.com/deploy-atividade",
+            "analytics_url": "https://ap-webserver-online-lab.onrender.com/paramentros_da_analiticas",
+            "analytics_list_url": "https://ap-webserver-online-lab.onrender.com/analiticas"
+      }
+]);

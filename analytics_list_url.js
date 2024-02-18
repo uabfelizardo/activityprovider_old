@@ -1,6 +1,6 @@
-[
+const data = JSON.stringify([
     {
-    "inveniraStdID": "1xxx",
+    "inveniraUtenteID": "1xxx",
         "utenteAnalytics": [
             {"name": "idade","type": "integer"},
             {"name": "genero","type": "char"},
@@ -17,4 +17,4 @@
             {"name": "tem_fraqueza","type": "boolean", "value": true}
         ]
     }
-]
+]);

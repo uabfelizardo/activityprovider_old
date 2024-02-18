@@ -1,4 +1,4 @@
-[
+const data = JSON.stringify([
     {
     "activityID": "Identificador da instância da atividade na Inven!RA",
     "Inven!UtenteID": "Este texto é o identificador de estudante/formando na Inven!RA",
@@ -18,4 +18,4 @@
         "tem_fraqueza" : "Parâmetro de pergunta se o utente tem fraqueza"
         }
     }
-]
+]);
